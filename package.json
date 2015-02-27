@@ -1,0 +1,35 @@
+{
+  "name": "express-route-refresh",
+  "version": "0.0.1",
+  "description": "Refesh express router (routes) without restarting the process",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "express",
+    "router",
+    "refresh",
+    "reload",
+    "restart",
+    "routes",
+    "middleware"
+  ],
+  "author": {
+    "name": "Luis Lafuente",
+    "email": "llafuente@noboxout.com",
+    "url": "http://www.noboxout.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/llafuente/express-route-refresh.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "require-reload": "^0.2.2"
+  },
+  "devDependencies": {
+    "tap": "^0.7.1",
+    "request": "^2.53.0"
+  }
+}
