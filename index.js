@@ -1,14 +1,14 @@
 var reload = require('require-reload')(require)
 
 function express_route_refresh(app, url, module) {
-  var router_count = !app._router ? 1 : app._router.stack.length;
+  var router_count = !app._router ? 2 : app._router.stack.length;
 
   app.use(url, reload(module));
 
   var idx = app._router.stack.length - 1;
 
-  if (router_count + 1 != idx) {
-    throw new Error("Cannot include more than one router at a time");
+  if (router_count != idx) {
+    console.error("(warning) cannot include more than one router at a time, it may fail...", url, module);
   }
 
   return function refresh(req, res, next) {
@@ -23,6 +23,7 @@ function express_route_refresh(app, url, module) {
 }
 
 express_route_refresh.v400 = express_route_refresh;
+express_route_refresh.v410 = express_route_refresh;
 
 
 module.exports = express_route_refresh;

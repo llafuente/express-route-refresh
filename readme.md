@@ -92,7 +92,7 @@ Keep it simple, just export a router and everything will be fine :)
 
 ## Notice about express versions
 
-It's tested with express 4.0.
+It's tested with express 4.0 & 4.1
 
 express do not expose any API to allow middlewares manipulation.
 
@@ -102,7 +102,8 @@ I will be happy to support any new version in the way or past if needed/requeste
 Supported versions:
 ```js
 var refresh_latest = require("express-route-refresh"), // actually are the same
-  refresh_v400 = require("express-route-refresh").v400;
+  refresh_v400 = require("express-route-refresh").v400,
+  refresh_v410 = require("express-route-refresh").v410;
 ```
 
 
