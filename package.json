@@ -1,6 +1,6 @@
 {
   "name": "express-route-refresh",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Refesh express router (routes) without restarting the process",
   "main": "index.js",
   "scripts": {
