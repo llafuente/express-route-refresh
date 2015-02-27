@@ -1,6 +1,6 @@
 var reload = require('require-reload')(require)
 
-function express_route_refresh_v400(app, url, module) {
+function express_route_refresh(app, url, module) {
   var router_count = !app._router ? 1 : app._router.stack.length;
 
   app.use(url, reload(module));

@@ -97,14 +97,12 @@ It's tested with express 4.0.
 express do not expose any API to allow middlewares manipulation.
 
 I did it modifying internal variables in express application in particular: `_router.stack`,
-I will be happy to support any new version in the way.
+I will be happy to support any new version in the way or past if needed/requested.
 
-To see supported versions:
-
-```sh
-node
-> require("./index.js")
-{ [Function: express_route_refresh_v400] v400: [Circular] }
+Supported versions:
+```js
+var refresh_latest = require("express-route-refresh"), // actually are the same
+  refresh_v400 = require("express-route-refresh").v400;
 ```
 
 

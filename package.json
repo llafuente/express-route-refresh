@@ -4,7 +4,7 @@
   "description": "Refesh express router (routes) without restarting the process",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "tap test/test.js"
   },
   "keywords": [
     "express",
